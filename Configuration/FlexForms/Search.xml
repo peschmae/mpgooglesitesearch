@@ -1,0 +1,35 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <main>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>GSS Config</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.gssid>
+                        <TCEforms>
+                            <label>Google Site Search</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.gssid>
+                    <settings.flexform.resultsPerPage>
+                        <TCEforms>
+                            <label>Results per Page</label>
+                            <config>
+                                <type>input</type>
+                                <size>5</size>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.resultsPerPage>
+                </el>
+            </ROOT>
+        </main>
+    </sheets>
+</T3DataStructure>

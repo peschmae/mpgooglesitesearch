@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Google Site Search extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+        <languageKey index="default" type="array">
+            <label index="emptyQuery">You sent an empty query</label>
+            <label index="noSearchResults">There were no search results for "%s"</label>
+            <label index="previous">Previous</label>
+            <label index="next">Next</label>
+            <label index="search_query">Search for "%s"</label>
+            <label index="search_summary">Displaying search result %s - %s of approximate %s</label>
+            <label index="size">Size</label>
+            <label index="last_scanned">Last scanned</label>
+            <label index="enter_searchterm">Enter search query here</label>
+            <label index="search">Search</label>
+            <label index="first_page">First page</label>
+        </languageKey>
+
+        <languageKey index="de" type="array">
+            <label index="emptyQuery">Es wurde nach nichts gesucht.</label>
+            <label index="noSearchResults">Keine Suchresultate für "%s"</label>
+            <label index="previous">Zurück</label>
+            <label index="next">Weiter</label>
+            <label index="search_query">Suche nach "%s"</label>
+            <label index="search_summary">Zeige Resultate %s - %s von ungefähr %s</label>
+            <label index="size">Grösse</label>
+            <label index="last_scanned">Zuletzt gescannt</label>
+            <label index="enter_searchterm">Geben Sie Ihre Suchanfrage ein</label>
+            <label index="search">Suchen</label>
+            <label index="first_page">Erste Seite</label>
+        </languageKey>
+
+        <languageKey index="fr" type="array">
+            <label index="emptyQuery">Vous avez entré rien.</label>
+            <label index="noSearchResults">Aucun résultat pour «%s»</label>
+            <label index="previous">Retour</label>
+            <label index="next">Suivant</label>
+            <label index="search_query">Recherche de «%s»</label>
+            <label index="search_summary">Résultats %s à %s d'environ %s</label>
+            <label index="size">Taille</label>
+            <label index="last_scanned">Dernier scanné</label>
+            <label index="enter_searchterm">Entrez votre requête de recherche</label>
+            <label index="search">Rechercher</label>
+            <label index="first_page">Première page</label>
+        </languageKey>
+    </data>
+</T3locallang>

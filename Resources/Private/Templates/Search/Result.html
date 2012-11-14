@@ -1,0 +1,55 @@
+<div class="search-wrapper">
+    <f:render partial="SearchForm" arguments="{query: '{query}'}" />
+
+    <f:if condition="{noResultText}">
+        <f:then>
+            <f:translate key="{noResultText}" arguments="{0: '{query}'}" />
+        </f:then>
+        <f:else>
+
+            <div class="search-summary">
+                <p><f:translate key="search_summary" arguments="{0: '{general.start}', 1: '{general.end}', 2: '{general.numberOfResults}'}" /></p>
+            </div>
+
+            <f:render partial="Pager" arguments="{pager: '{pager}', query: '{query}'}" />
+
+            <div class="search-results-wrapper">
+                <f:for each="{results}" as="result">
+                    <div class="searchresult">
+                        <f:if condition="{result.mime}">
+                            <span class="mime">{result.mime}</span>
+                        </f:if>
+
+                        <f:if condition="{result.thumbnail}">
+                            <img src="{result.thumbnail.src}" width="{result.thumbnail.width}" height="{result.thumbnail.height}" />
+                        </f:if>
+
+                        <h2>
+                            <f:link.external uri="{result.url}">
+                                <f:format.html parseFuncTSPath="lib.parseFunc">{result.title}</f:format.html>
+                            </f:link.external>
+                        </h2>
+
+                        <p>
+                            <f:format.html parseFuncTSPath="lib.parseFunc">{result.content}</f:format.html>
+                        </p>
+
+                        <f:link.external uri="{result.url}">
+                            {result.url}
+                        </f:link.external>
+
+                        <f:if condition="{result.lastModified}">
+                            -&nbsp;
+                            <span><f:translate key="last_scanned" />: <f:format.date format="d.m.Y">{result.lastModified}</f:format.date></span>
+                        </f:if>
+
+                        <f:if condition="{result.pageSize}">
+                            <span><f:translate key="size" />: {result.pageSize}</span>
+                        </f:if>
+                    </div>
+                </f:for>
+            </div>
+
+        </f:else>
+    </f:if>
+</div>

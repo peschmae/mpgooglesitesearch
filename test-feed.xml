@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<GSP VER="3.2">
+    <TM>0.126589</TM>
+    <Q>Laax</Q>
+    <PARAM name="cx" value="007503876198645505299:ubhwuaws3oe" original_value="007503876198645505299:ubhwuaws3oe" url_escaped_value="007503876198645505299%3Aubhwuaws3oe" js_escaped_value="007503876198645505299:ubhwuaws3oe">
+    </PARAM>
+    <PARAM name="client" value="google-csbe" original_value="google-csbe" url_escaped_value="google-csbe" js_escaped_value="google-csbe">
+    </PARAM>
+    <PARAM name="start" value="0" original_value="0" url_escaped_value="0" js_escaped_value="0">
+    </PARAM>
+    <PARAM name="num" value="10" original_value="10" url_escaped_value="10" js_escaped_value="10">
+    </PARAM>
+    <PARAM name="output" value="xml_no_dtd" original_value="xml_no_dtd" url_escaped_value="xml_no_dtd" js_escaped_value="xml_no_dtd">
+    </PARAM>
+    <PARAM name="q" value="Laax" original_value="Laax" url_escaped_value="Laax" js_escaped_value="Laax">
+    </PARAM>
+    <Context>
+        <title>Flims.com Suchmaschine</title>
+    </Context>
+    <RES SN="1" EN="10">
+        <M>7690</M>
+        <FI></FI>
+        <NB>
+            <NU>/search?q=Laax&amp;hl=en&amp;client=google-csbe&amp;cx=007503876198645505299:ubhwuaws3oe&amp;output=xml_no_dtd&amp;ie=UTF-8&amp;ei=ZT2TT-b-OsrtOZqX1e4D&amp;start=10&amp;sa=N</NU>
+        </NB>
+        <RG START="1" SIZE="10">
+        </RG>
+        <RG START="1" SIZE="1">
+        </RG>
+        <R N="1">
+            <U>http://www.flims.com/en/buchen/hotels/hotel-detail/signinahotel</U>
+            <UE>http://www.flims.com/en/buchen/hotels/hotel-detail/signinahotel</UE>
+            <T>Garni Hotel Rustico &lt;b&gt;Laax&lt;/b&gt;</T>
+            <RK>0</RK>
+            <S>Centrally located, cozy Non Smoking Hotel Garni with offerings for every budget. &lt;br&gt;  Particularly suitable for corporate and family events. Experience of eating at the &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>en</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2011/04/29"/>
+                </DataObject>
+                <DataObject type="cse_image">
+                    <Attribute name="src" value="http://image.tomas.travel/laax/repository/LAX00020010000018758/LAX00020010000682614/LAX00020010013803698.jpg"/>
+                </DataObject>
+                <DataObject type="cse_thumbnail">
+                    <Attribute name="width" value="259"/>
+                    <Attribute name="height" value="194"/>
+                    <Attribute name="src" value="http://t2.gstatic.com/images?q=tbn:ANd9GcSqv5VzoOdW4hKjzrjMPim1vtKSYJ76fhUM3IWUA7RzSWYsOIvfGYP2WJN5"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="615k" CID="qVzqqCrXbmAJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="2" SIZE="1">
+        </RG>
+        <R N="2">
+            <U>http://www.flims.com/en/buchen/hotels/hotel-detail/hotel-bellaval-laax-dorf</U>
+            <UE>http://www.flims.com/en/buchen/hotels/hotel-detail/hotel-bellaval-laax-dorf</UE>
+            <T>Hotel Bellaval &lt;b&gt;Laax&lt;/b&gt; Dorf</T>
+            <RK>0</RK>
+            <S>Die Temperaturen erreichen im Tal in Flims/&lt;b&gt;Laax&lt;/b&gt; bis zu 10 Grad, auf dem Crap &lt;br&gt;  Sogn Gion um -1 Grad. Am Freitag überwiegen die Wolken, die Sonne tut sich &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>en</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2011/04/29"/>
+                </DataObject>
+                <DataObject type="cse_image">
+                    <Attribute name="src" value="http://image.tomas.travel/laax/repository/LAX00020010000001310/LAX00020010000682614/LAX00020010011505502.jpg"/>
+                </DataObject>
+                <DataObject type="cse_thumbnail">
+                    <Attribute name="width" value="259"/>
+                    <Attribute name="height" value="194"/>
+                    <Attribute name="src" value="http://t0.gstatic.com/images?q=tbn:ANd9GcR9A8PN9IliXHN3TvwMvaDZulo4CxsCo6so1gxopWQDodzjRZlvcaGScaca"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="374k" CID="jZ9vXCwO4D4J"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="3" SIZE="1">
+        </RG>
+        <R N="3">
+            <U>http://www.flims.com/en/news-info/infrastructure-and-excursion-tips/museums-village-history/</U>
+            <UE>http://www.flims.com/en/news-info/infrastructure-and-excursion-tips/museums-village-history/</UE>
+            <T>Museums in Flims, &lt;b&gt;Laax&lt;/b&gt; and Falera</T>
+            <RK>0</RK>
+            <S>A visit to a museum or an exhibition is not just something to do when the weather &lt;br&gt;  is bad. The region Flims has numerous offers for culture enthusiasts and the &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>en</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2011/05/27"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="35k" CID="btiIWVCdPDwJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="4" SIZE="1">
+        </RG>
+        <R N="4">
+            <U>http://www.flims.com/</U>
+            <UE>http://www.flims.com/</UE>
+            <T>Flims - Bikeurlaub Wandern Hotels Schweiz</T>
+            <RK>0</RK>
+            <CRAWLDATE>11 hours ago</CRAWLDATE>
+            <TIMESTAMP>20120421-04d4548</TIMESTAMP>
+            <S>Die Destination Flims, mit den drei Dörfern Flims, &lt;b&gt;Laax&lt;/b&gt; und Falera, hat für Ihren &lt;br&gt;  aktiven Urlaub viel zu bieten. Neben dem grossen Angebot für Cross Country- &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>de</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2012/04/20"/>
+                </DataObject>
+                <DataObject type="cse_image">
+                    <Attribute name="src" value="http://www.flims.com/typo3temp/GB/ecc11a9bf5.jpg"/>
+                </DataObject>
+                <DataObject type="cse_thumbnail">
+                    <Attribute name="width" value="251"/>
+                    <Attribute name="height" value="201"/>
+                    <Attribute name="src" value="http://t3.gstatic.com/images?q=tbn:ANd9GcQL_fFcnij4-77kqGpJrB8H1wrgBe9CiPZg79l_hQVzDcetHF_Gva6tSQKW"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="34k" CID="a7w92FspFM0J"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="5" SIZE="1">
+        </RG>
+        <R N="5">
+            <U>http://www.flims.com/en/news-info/infrastructure-and-excursion-tips/golf</U>
+            <UE>http://www.flims.com/en/news-info/infrastructure-and-excursion-tips/golf</UE>
+            <T>Golf courses and playing golf in Flims, &lt;b&gt;Laax&lt;/b&gt; and Falera</T>
+            <RK>0</RK>
+            <S>Buna Vista Golf course is one of Switzerland&amp;#39;s most beautiful courses. Situated &lt;br&gt;  high above the Anterior Rhine, the 18 hole course offers challenging greens and &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>en</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2011/08/12"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="33k" CID="PLAgkyTKPLIJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="6" SIZE="1">
+        </RG>
+        <R N="6">
+            <U>http://www.flims.com/en/activities/swimming-lakes/lake-laax/</U>
+            <UE>http://www.flims.com/en/activities/swimming-lakes/lake-laax/</UE>
+            <T>Lake &lt;b&gt;Laax&lt;/b&gt; is situated at the heart of this village and offers a unique &lt;b&gt;...&lt;/b&gt;</T>
+            <RK>0</RK>
+            <S>A large meadow for sunbathing, a beach, clear lake water and an incredible &lt;br&gt;  mountain vista: Lake &lt;b&gt;Laax&lt;/b&gt; is situated at the heart of this village and offers a &lt;br&gt;  unique &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>de</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2012/04/16"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="30k" CID="LWoy6EWBH2oJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="7" SIZE="1">
+        </RG>
+        <R N="7">
+            <U>http://www.flims.com/en/activities/excursion-tips/barbecue-areas/in-the-valley/</U>
+            <UE>http://www.flims.com/en/activities/excursion-tips/barbecue-areas/in-the-valley/</UE>
+            <T>Barbecues and relaxation at beautiful barbecue areas in Flims, &lt;b&gt;Laax&lt;/b&gt; &lt;b&gt;...&lt;/b&gt;</T>
+            <RK>0</RK>
+            <S>You don&amp;#39;t have to go on a mountain hike to find a pretty barbecue area. You can &lt;br&gt;  combine your barbecue session with a short walk if you choose one of the &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>en</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2011/09/05"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="37k" CID="375BFVTOctEJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="8" SIZE="1">
+        </RG>
+        <R N="8">
+            <U>http://www.flims.com/en/flims-live.html</U>
+            <UE>http://www.flims.com/en/flims-live.html</UE>
+            <T>Flims live - Weather, water temperatures &amp;amp; webcams</T>
+            <RK>0</RK>
+            <S>Am Nachmittag gibt es neben dichten Wolken und gelegentlichen Schauern &lt;br&gt;  auch Aufhellungen und etwas Sonne in der Ferienregion Flims &lt;b&gt;Laax&lt;/b&gt; Falera. In &lt;br&gt;  &lt;b&gt;Laax&lt;/b&gt; &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>en</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2012/04/18"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="41k" CID="gbGPSpLRs4EJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="9" SIZE="1">
+        </RG>
+        <R N="9">
+            <U>http://www.flims.com/en/biken/bike-hotels/</U>
+            <UE>http://www.flims.com/en/biken/bike-hotels/</UE>
+            <T>Mountain bike hotels for mountain biking holidays in Flims, &lt;b&gt;Laax&lt;/b&gt; and &lt;b&gt;...&lt;/b&gt;</T>
+            <RK>0</RK>
+            <S>The best tour requires the best support. The region&amp;#39;s bike hotels provide &lt;br&gt;  everything: an overnight laundry service to wash and dry bikers&amp;#39; kits, a secure &lt;br&gt;  lock-up &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>de</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2012/03/27"/>
+                </DataObject>
+                <DataObject type="cse_image">
+                    <Attribute name="src" value="http://www.flims.com/fileadmin/media/statischer_Inhalt/2.Biken/mountainbike_holidays.png"/>
+                </DataObject>
+                <DataObject type="cse_thumbnail">
+                    <Attribute name="width" value="84"/>
+                    <Attribute name="height" value="70"/>
+                    <Attribute name="src" value="http://t2.gstatic.com/images?q=tbn:ANd9GcS2_EkVYIF38KeM1ClwS8xTbj-WAOJUgMHxvNw8jH5X8H0pOw0NCLkw"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="32k" CID="oM_wgn64FQIJ"/>
+                <RT/>
+            </HAS>
+        </R>
+        <RG START="10" SIZE="1">
+        </RG>
+        <R N="10">
+            <U>http://www.flims.com/de/news-infos/bergbahnen/oeffnungs-betriebszeiten/</U>
+            <UE>http://www.flims.com/de/news-infos/bergbahnen/oeffnungs-betriebszeiten/</UE>
+            <T>Unsere Bergbahnen bringen Sie sicher auf den Berg</T>
+            <RK>0</RK>
+            <CRAWLDATE>6 hours ago</CRAWLDATE>
+            <TIMESTAMP>20120421-09d2843</TIMESTAMP>
+            <S>MIt 10 Grad in &lt;b&gt;Laax&lt;/b&gt; wird es etwas milder. Am Dienstag überqueren Fronten die &lt;br&gt;  Ferienregion Flims &lt;b&gt;Laax&lt;/b&gt; Falera und es ist kühler, bewölkt und nass mit nur &lt;b&gt;...&lt;/b&gt;</S>
+            <LANG>de</LANG>
+            <Label>_cse_ubhwuaws3oe</Label>
+            <PageMap>
+                <DataObject type="metatags">
+                    <Attribute name="language" value="de"/>
+                    <Attribute name="lastmodified" value="2011/08/16"/>
+                </DataObject>
+            </PageMap>
+            <HAS>
+                <L/>
+                <C SZ="35k" CID="_NnQd0ZRw3wJ"/>
+                <RT/>
+            </HAS>
+        </R>
+    </RES>
+</GSP>

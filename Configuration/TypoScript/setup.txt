@@ -1,0 +1,25 @@
+plugin.tx_mpgooglesitesearch {
+	view {
+		templateRootPath = {$plugin.tx_mpgooglesitesearch.view.templateRootPath}
+		partialRootPath = {$plugin.tx_mpgooglesitesearch.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_mpgooglesitesearch.view.layoutRootPath}
+	}
+
+	persistence {
+		storagePid = {$plugin.tx_mpgooglesitesearch.persistence.storagePid}
+	}
+
+	# Display "Page X" links
+	showPageLinks = 1
+	pageLinkCount = 5
+	showFirstPageLink = 1
+
+	settings {
+	    languages {
+	        default {
+	            shortcut = en
+	            countrycode = uk
+	        }
+	    }
+	}
+}

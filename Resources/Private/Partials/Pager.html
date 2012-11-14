@@ -1,0 +1,41 @@
+<f:if condition="{pager}">
+	<ul class="search-pager">
+		<li>
+			<f:if condition="{pager.hasPrevPage}">
+				<f:then>
+					<f:link.action action="result" arguments="{page: '{pager.prevPage}', query: '{query}'}" noCacheHash="1" noCache="1"><f:translate key="previous" /></f:link.action>
+				</f:then>
+				<f:else>
+					<f:translate key="previous" />
+				</f:else>
+			</f:if>
+		</li>
+
+		<f:for each="{pager.pages}" as="page">
+			<li{f:if(condition:'{page.isCurrent}',then:' class="current"')}>
+			<f:if condition="{page.isCurrent}">
+				<f:then>
+					{page.number}
+				</f:then>
+				<f:else>
+					<f:link.action action="result" arguments="{page: '{page.argument}', query: '{query}'}" noCacheHash="1" noCache="1">
+						{page.number}
+					</f:link.action>
+				</f:else>
+			</f:if>
+			</li>
+		</f:for>
+
+		<li>
+			<f:if condition="{pager.nextPage} > 0">
+				<f:then>
+					<f:link.action action="result" arguments="{page: '{pager.nextPage}', query: '{query}'}" noCacheHash="1" noCache="1"><f:translate key="next" /></f:link.action>
+				</f:then>
+				<f:else>
+					<f:translate key="next" />
+				</f:else>
+			</f:if>
+
+		</li>
+	</ul>
+</f:if>

@@ -1,0 +1,4 @@
+<f:form class="search-form" action="result" noCacheHash="1" noCache="1">
+    <f:form.textfield class="search-query" name="query" value="{f:if(condition:'{query}', then:'{query}')}" placeholder="{f:translate(key: 'enter_searchterm')}" />
+    <f:form.submit class="search-submit" value="{f:translate(key: 'search')}" />
+</f:form>
