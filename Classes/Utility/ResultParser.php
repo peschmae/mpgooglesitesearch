@@ -55,8 +55,14 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
             '&num='.$resultsPerPage.
             '&q='.urlencode($query);
 
+		$status = FALSE;
+
         if (ini_get('allow_url_fopen') == 1) {
             $searchResultString = file_get_contents($url);
+
+			if(strstr($http_response_header['0'], '200 OK') !== FALSE) {
+				$status = TRUE;
+			}
 
         } elseif (function_exists('curl_init')) {
             $curlSession = curl_init();
@@ -67,12 +73,22 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
 
             $searchResultString = curl_exec($curlSession);
 
+			if(curl_getinfo($curlSession,CURLINFO_HTTP_CODE ) == 200) {
+				$status = TRUE;
+			}
+
             curl_close($curlSession);
         } else {
             throw new Exception('Neither cUrl nor allow_url_fopen allowed.');
         }
 
-        $this->xml = DOMDocument::loadXML($searchResultString);
+		if($status && !empty($searchResultString)) {
+			$this->xml = DOMDocument::loadXML($searchResultString);
+		} else {
+			throw new Exception('Error while fetching the XML, please check your configuration');
+		}
+
+
     }
 
     /**
