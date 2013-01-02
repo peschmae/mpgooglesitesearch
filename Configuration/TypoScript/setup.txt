@@ -9,11 +9,6 @@ plugin.tx_mpgooglesitesearch {
 		storagePid = {$plugin.tx_mpgooglesitesearch.persistence.storagePid}
 	}
 
-	# Display "Page X" links
-	showPageLinks = 1
-	pageLinkCount = 5
-	showFirstPageLink = 1
-
 	settings {
 	    languages {
 	        default {
@@ -21,5 +16,10 @@ plugin.tx_mpgooglesitesearch {
 	            countrycode = uk
 	        }
 	    }
+
+	    # Display "Page X" links
+		showPageLinks = 1
+		pageLinkCount = 5
+		showFirstPageLink = 1
 	}
 }
