@@ -49,7 +49,11 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
 	 * @param string $page the page to display
 	 * @return void
 	 */
-	public function resultAction($query, $page = 0) {
+	public function resultAction($query = '', $page = 0) {
+
+		if($query == '') {
+			$this->redirect('index');
+		}
 
         $resultsPerPage = $this->settings['flexform']['resultsPerPage'];
         $start = $page*$resultsPerPage;
