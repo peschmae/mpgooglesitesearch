@@ -33,30 +33,31 @@
  */
 class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_Controller_ActionController {
 
-	/**
-	 * action index
-	 *
-	 * @return void
-	 */
-	public function indexAction() {
-		// Nothing to do here, just display the view
-	}
+    /**
+     * action index
+     *
+     * @return void
+     */
+    public function indexAction() {
+        // Nothing to do here, just display the view
+    }
 
-	/**
-	 * action search
-	 *
-	 * @param string $query the search query
-	 * @param string $page the page to display
-	 * @return void
-	 */
-	public function resultAction($query = '', $page = 0) {
+    /**
+     * action search
+     *
+     * @param string $query the search query
+     * @param string $page  the page to display
+     *
+     * @return void
+     */
+    public function resultAction($query = '', $page = 0) {
 
-		if($query == '') {
-			$this->redirect('index');
-		}
+        if ($query == '') {
+            $this->redirect('index');
+        }
 
         $resultsPerPage = $this->settings['flexform']['resultsPerPage'];
-        $start = $page*$resultsPerPage;
+        $start = $page * $resultsPerPage;
 
         if (!empty($query)) {
             $resultParser = t3lib_div::makeInstance('Tx_Mpgooglesitesearch_Utility_ResultParser');
@@ -71,28 +72,28 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
             $results = $resultParser->getSearchResultArray();
 
             if ($generalInformation['numberOfResults'] > $resultsPerPage) {
-                $pager = array();
+                $pager = array ();
 
-				$pager['showPageLinks'] = $this->settings['showPageLinks'] == 1;
-				if ($pager['showPageLinks']) {
-					$pager['pages'] = $this->generatePageLinks(ceil($generalInformation['numberOfResults'] / $resultsPerPage), $page);
+                $pager['showPageLinks'] = $this->settings['showPageLinks'] == 1;
+                if ($pager['showPageLinks']) {
+                    $pager['pages'] = $this->generatePageLinks(ceil($generalInformation['numberOfResults'] / $resultsPerPage), $page);
 
-					if ($pager['pages'][0]['argument'] !== 0 && $this->settings['showFirstPageLink']) {
-						$pager['showFirstPageLink'] = true;
-					}
-				}
+                    if ($pager['pages'][0]['argument'] !== 0 && $this->settings['showFirstPageLink']) {
+                        $pager['showFirstPageLink'] = TRUE;
+                    }
+                }
 
                 if ($generalInformation['numberOfResults'] >= $start + $resultsPerPage) {
-                    $pager['nextPage'] = $page+1;
+                    $pager['nextPage'] = $page + 1;
                 } else {
-                    $pager['nextPage'] = false;
+                    $pager['nextPage'] = FALSE;
                 }
 
                 if ($start > 0) {
-                    $pager['prevPage'] = $page-1;
-                    $pager['hasPrevPage'] = true;
+                    $pager['prevPage'] = $page - 1;
+                    $pager['hasPrevPage'] = TRUE;
                 } else {
-                    $pager['hasPrevPage'] = false;
+                    $pager['hasPrevPage'] = FALSE;
                 }
 
                 $this->view->assign('pager', $pager);
@@ -111,61 +112,67 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
         } else {
             $this->view->assign('noResultText', 'emptyQuery');
         }
-	}
+    }
 
-	/**
-	 * action widget
-	 *
-	 * @return void
-	 */
-	public function widgetAction() {
+    /**
+     * action widget
+     *
+     * @return void
+     */
+    public function widgetAction() {
+
         $this->view->assign('resultPageUid', $this->settings['flexform']['resultpage']);
-	}
+    }
 
 
-/* HELPER FUNCTIONS */
+    /* HELPER FUNCTIONS */
 
-	/**
-	 * Create an array of page links
-	 *
-	 * @param int $pageCount Total number of pages
-	 * @param int $currentPage Current result page (zero based)
-	 *
-	 * @return array
-	 */
-	private function generatePageLinks($pageCount, $currentPage) {
-		$pageLinkCount = intval($this->settings['pageLinkCount']);
+    /**
+     * Create an array of page links
+     *
+     * @param int $pageCount   Total number of pages
+     * @param int $currentPage Current result page (zero based)
+     *
+     * @return array
+     */
+    private function generatePageLinks($pageCount, $currentPage) {
 
-		if ($currentPage < ceil($pageLinkCount / 2)) {
-			$pagesStart = 0;
-			$pagesEnd = $pageLinkCount;
-		} else if ($currentPage >= $pageCount - ceil($pageLinkCount/2)) {
-			$pagesStart = $pageCount - $pageLinkCount;
-			$pagesEnd = $pageCount;
-		} else {
-			$pagesStart = $currentPage - floor($pageLinkCount / 2);
-			$pagesEnd = $currentPage + ceil($pageLinkCount / 2);
-		}
+        $pageLinkCount = intval($this->settings['pageLinkCount']);
 
-		$pages = array();
-		for ($i = $pagesStart; $i < $pagesEnd; $i++) {
-			array_push($pages, array(
-				'isCurrent' => $currentPage == $i,
-				'number' => $i + 1,
-				'argument' => $i
-			));
-		}
+        if ($currentPage < ceil($pageLinkCount / 2)) {
+            $pagesStart = 0;
+            $pagesEnd = $pageLinkCount;
+        } else {
+            if ($currentPage >= $pageCount - ceil($pageLinkCount / 2)) {
+                $pagesStart = $pageCount - $pageLinkCount;
+                $pagesEnd = $pageCount;
+            } else {
+                $pagesStart = $currentPage - floor($pageLinkCount / 2);
+                $pagesEnd = $currentPage + ceil($pageLinkCount / 2);
+            }
+        }
 
-		return $pages;
-	}
+        $pages = array ();
+        for ($i = $pagesStart; $i < $pagesEnd; $i++) {
+            array_push($pages, array (
+                                     'isCurrent' => $currentPage == $i,
+                                     'number'    => $i + 1,
+                                     'argument'  => $i
+                               ));
+        }
 
-	/**
+        return $pages;
+    }
+
+    /**
      * get's the language from the typoscript settings
      *
      * @param string $languageUid the language uid
+     *
      * @return string
      */
     protected function getLanguage($languageUid) {
+
         if (isset($this->settings['languages'][$languageUid]['shortcut'])) {
             $language = $this->settings['languages'][$languageUid]['shortcut'];
 
@@ -183,9 +190,11 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
      * get's the country code from the typoscript settings
      *
      * @param string $languageUid the language uid
+     *
      * @return string
      */
     protected function getCountrycode($languageUid) {
+
         if (isset($this->settings['languages'][$languageUid]['countrycode'])) {
             $countrycode = $this->settings['languages'][$languageUid]['countrycode'];
 
@@ -200,4 +209,5 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
     }
 
 }
+
 ?>

@@ -90,67 +90,84 @@ class Tx_Mpgooglesitesearch_Domain_Model_Result extends Tx_Extbase_DomainObject_
     protected $mime;
 
     public function setContent($content) {
+
         $this->content = $content;
     }
 
     public function getContent() {
+
         return $this->content;
     }
 
     public function setImage($image) {
+
         $this->image = $image;
     }
 
     public function getImage() {
+
         return $this->image;
     }
 
     public function setLastModified($lastModified) {
+
         $this->lastModified = $lastModified;
     }
 
     public function getLastModified() {
+
         return $this->lastModified;
     }
 
     public function setPageSize($pageSize) {
+
         $this->pageSize = $pageSize;
     }
 
     public function getPageSize() {
+
         return $this->pageSize;
     }
 
     public function setThumbnail($thumbnail) {
+
         $this->thumbnail = $thumbnail;
     }
 
     public function getThumbnail() {
+
         return $this->thumbnail;
     }
 
     public function setTitle($title) {
+
         $this->title = $title;
     }
 
     public function getTitle() {
+
         return $this->title;
     }
 
     public function setUrl($url) {
+
         $this->url = $url;
     }
 
     public function getUrl() {
+
         return $this->url;
     }
 
     public function setMime($mime) {
+
         $this->mime = $mime;
     }
 
     public function getMime() {
+
         return $this->mime;
     }
 }
+
 ?>
