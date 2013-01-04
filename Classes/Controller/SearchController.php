@@ -46,7 +46,7 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
      * action search
      *
      * @param string $query the search query
-     * @param string $page  the page to display
+     * @param int $page  the page to display
      *
      * @return void
      */
@@ -60,6 +60,7 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
         $start = $page * $resultsPerPage;
 
         if (!empty($query)) {
+            /** @var $resultParser Tx_Mpgooglesitesearch_Utility_ResultParser */
             $resultParser = t3lib_div::makeInstance('Tx_Mpgooglesitesearch_Utility_ResultParser');
 
             $cseNumber = $this->settings['flexform']['gssid'];

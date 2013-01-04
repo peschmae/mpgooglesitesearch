@@ -41,9 +41,18 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
     protected $xml;
 
     /**
-     * Load the XML string into a DOMDocument
+     * Fetches the xml from Google via file_get_contents or curl
+     * and loads it into $xml
      *
-     * @var string the XML as a string
+     * @param string $query          the query to search for
+     * @param int    $start          the result number to search from
+     * @param int    $resultsPerPage the number of results we want from Google
+     * @param string $cseNumber      the Google Site Search ID
+     * @param string $language       the language the search in
+     * @param string $countrycode    the country for which we want Google to prioritize the results
+     *
+     * @throws Exception
+     *
      * @return void
      */
     public function fetchXml($query, $start, $resultsPerPage, $cseNumber, $language, $countrycode) {
@@ -59,13 +68,17 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
         $status = FALSE;
 
         if (ini_get('allow_url_fopen') == 1) {
+            $method = 'file_get_contents';
             $searchResultString = file_get_contents($url);
 
             if (strstr($http_response_header['0'], '200 OK') !== FALSE) {
                 $status = TRUE;
             }
 
-        } elseif (function_exists('curl_init')) {
+        }
+
+        if (!$status && function_exists('curl_init')) {
+            $method = 'curl';
             $curlSession = curl_init();
 
             curl_setopt($curlSession, CURLOPT_URL, $url);
@@ -79,23 +92,27 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
             }
 
             curl_close($curlSession);
-        } else {
+        }
+
+        if (!isset($method)) {
             throw new Exception('Neither cUrl nor allow_url_fopen allowed.');
         }
 
         if ($status && !empty($searchResultString)) {
             $this->xml = DOMDocument::loadXML($searchResultString);
         } else {
-            throw new Exception('Error while fetching the XML, please check your configuration');
+            throw new Exception('Error while fetching the XML with "' . $method . '", please check your configuration');
         }
 
 
     }
 
     /**
-     * Parse the xml for the search results
+     * Parse the xml for search results
      *
-     * @var array of search results
+     * @throws Exception
+     *
+     * @return array
      */
     public function getSearchResultArray() {
 
@@ -107,6 +124,7 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
 
         $resultArray = Array ();
         foreach ($results as $result) {
+            /** @var $resultObject Tx_Mpgooglesitesearch_Domain_Model_Result */
             $resultObject = t3lib_div::makeInstance('Tx_Mpgooglesitesearch_Domain_Model_Result');
 
             // Get basic properties
@@ -164,7 +182,9 @@ class Tx_Mpgooglesitesearch_Utility_ResultParser {
     /**
      * Read the general information from the xml
      *
-     * @var array with the general information
+     * @throws Exception
+     *
+     * @return array
      */
     public function getGeneralInformation() {
 
