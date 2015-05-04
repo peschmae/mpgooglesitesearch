@@ -108,7 +108,7 @@ class Tx_Mpgooglesitesearch_Controller_SearchController extends Tx_Extbase_MVC_C
                 $this->view->assign('general', $generalInformation);
             }
 
-            $this->view->assign('query', $query);
+            $this->view->assign('query', htmlspecialchars($query));
 
         } else {
             $this->view->assign('noResultText', 'emptyQuery');
